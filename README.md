@@ -1,6 +1,6 @@
-homelab-macmini-2014-monterey-win10-linux-storage
 
-Welcome to my Homelan Mac Mini Late 2014 project! 
+
+Welcome to my Homelab Mac Mini Late 2014 Multi OS project! 
 
 This repository is a simple tutorial to help you and document my Homelab build and help anyone how wants to build something similar.
 
