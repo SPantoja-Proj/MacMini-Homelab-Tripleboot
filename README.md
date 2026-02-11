@@ -15,8 +15,8 @@ This repository is a simple tutorial to help you and document my Homelab build a
 
 ## Programs I used
 
-- `Mac Mini Late 2014` — The primary machine running the HomeLab environment.
-- `Window 10 Boot USB` — A bootable USB drive for installing Windows 10
+- `Balena Etcher` — We use this to create a OS Boor USB/ Burn ISO into a USB. (https://etcher.balena.io/)
+
 
 ## Websites I used
 
