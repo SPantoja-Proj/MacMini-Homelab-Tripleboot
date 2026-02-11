@@ -44,10 +44,13 @@ Table of Contents
 
 ## macOS Update and Preparation
 
-I will first check what operating system the Mac Mini is currently running.
+Begin by checking which version of macOS the Mac Mini is currently running.
 
-Check if the current OS is the latest operating system that it can run.
+Verify whether this version is the latest operating system supported by the device.
 
+Once the appropriate macOS version has been downloaded and installed, you can proceed with partitioning the system.
+
+Warning: I do not recommend attempting to install a macOS version that is not officially supported on the Mac Mini.
 
 ## Windows 10 Boot USB Preparation
 
