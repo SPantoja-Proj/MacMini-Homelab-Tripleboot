@@ -30,3 +30,5 @@ Table of content:
 1. Mac OS update and preperation.
 2. Window 10 Boot USB preperation.
 3. Mac Window 10 Partition installation
+4. Prepare External Hard Drive
+5. Ubuntu Boot USB preperation.
