@@ -20,8 +20,8 @@ This repository is a simple tutorial to help you and document my Homelab build a
 
 ## Websites I used
 
-- `Window 10 ISO` — [The primary machine running the HomeLab environment.](https://www.microsoft.com/en-us/software-download/windows10?msockid=048a50d796596c76364c463797ea6d5f)
-- `Ubuntu ISO` — A bootable USB drive for installing Windows 10
+- `Window 10 ISO` — (https://www.microsoft.com/en-us/software-download/windows10?msockid=048a50d796596c76364c463797ea6d5f)
+- `Ubuntu ISO` — (https://ubuntu.com/download/desktop)
 
 ## Instructions
 
