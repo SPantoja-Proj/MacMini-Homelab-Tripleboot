@@ -54,6 +54,31 @@ Table of Contents
 
 ## Windows 10 Boot USB Preparation
 
+`Requirements` 
+
+Before you begin, make sure you have:
+
+A USB flash drive (8 GB or larger)
+
+A working Windows, macOS, or Linux system
+
+A stable internet connection
+
+A valid Windows 10 license (for activation after installation)
+
+Step 1 — Download the Windows 10 ISO
+
+From Microsoft (Recommended)
+
+1.  Visit the official Microsoft download page:
+(https://www.microsoft.com/en-us/software-download/windows10?msockid=048a50d796596c76364c463797ea6d5f)
+
+Scroll to Create Windows 10 installation media “Download Now - Windows 10 Disk Image (ISO File)”.
+
+Wait until it finish downloading.
+
+
+
 ## macOS Windows 10 Partition Installation
 
 ## Prepare External Hard Drive
