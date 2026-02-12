@@ -164,6 +164,25 @@ Step 3 - Boot From the Windows 10 USB
 
 3. The Windows installer will load.
 
+Step 4 - Install Windows 10
+
+1. Choose your language and click Install Now.
+
+2. Enter your product key or skip for later activation.
+
+3.
+Select Windows 10 Home or Pro.
+
+4. When asked where to install Windows:
+
+-Select the BOOTCAMP partition
+
+-Click Format
+
+-Click Next
+
+`Do not delete or modify macOS partitions.` Only format the BOOTCAMP partition.
+
 ## Prepare External Hard Drive
 
 ## Ubuntu Boot USB Preparation
