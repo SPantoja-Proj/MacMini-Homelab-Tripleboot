@@ -170,8 +170,7 @@ Step 4 - Install Windows 10
 
 2. Enter your product key or skip for later activation.
 
-3.
-Select Windows 10 Home or Pro.
+3.Select Windows 10 Home or Pro.
 
 4. When asked where to install Windows:
 
@@ -182,6 +181,27 @@ Select Windows 10 Home or Pro.
 -Click Next
 
 `Do not delete or modify macOS partitions.` Only format the BOOTCAMP partition.
+
+Step 5 - Complete Installation
+
+Windows will reboot several times.
+If it boots into macOS:
+
+1. Restart
+
+2. Hold Option (⌥) or Alt
+
+3. Select Windows
+
+Continue setup until you reach the Windows desktop.
+
+`Notes`
+
+-Boot Camp Assistant on Monterey still handles partitioning correctly even if it no longer creates USB installers.
+
+-Using a manually created USB installer is the most reliable method for older Macs.
+
+-Always back up macOS before modifying partitions.
 
 ## Prepare External Hard Drive
 
