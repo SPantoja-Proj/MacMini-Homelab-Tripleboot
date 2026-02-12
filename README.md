@@ -77,9 +77,9 @@ From Microsoft (Recommended)
 1.  Visit the official Microsoft download page:
 (https://www.microsoft.com/en-us/software-download/windows10?msockid=048a50d796596c76364c463797ea6d5f)
 
-Scroll to Create Windows 10 installation media “Download Now - Windows 10 Disk Image (ISO File)”.
+2. Scroll to Create Windows 10 installation media “Download Now - Windows 10 Disk Image (ISO File)”.
 
-Wait until it finish downloading.
+3. Wait until it finish downloading.
 
 
 
