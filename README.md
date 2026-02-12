@@ -97,7 +97,9 @@ balenaEtcher works the same across Windows, macOS, and Linux.
 
 6. Wait for Etcher to finish writing and validating the USB.
 
-`Note` Etcher writes the ISO in a raw‑image format. Most systems will boot it normally, but some older BIOS‑only machines may require an MBR‑formatted USB created with other tools.
+`Notes` 
+
+Etcher writes the ISO in a raw‑image format. Most systems will boot it normally, but some older BIOS‑only machines may require an MBR‑formatted USB created with other tools.
 
 Flashing the USB will erase all data on it.
 
