@@ -1,33 +1,35 @@
 
 
-Welcome to my Homelab Mac Mini Late 2014 Multi OS project! 
+# Mac Mini Late 2014 — Triple‑Boot HomeLab Setup 
 
-This repository is a simple tutorial to help you and document my Homelab build and help anyone how wants to build something similar.
+A fully documented HomeLab project built on a **Mac Mini Late 2014**, upgraded with external storage and configured to run **macOS**, **Windows 10**, and **Ubuntu Linux**. This repository tracks the evolution of the setup, installation steps, configurations, and experiments along the way.
 
-## What I used
+## 🚀 Project Overview 
 
-- `Mac Mini Late 2014` — The primary machine running the HomeLab environment.
- 
-- `Window 10 Boot USB` — A bootable USB drive for installing Windows 10. Recommended size: 8–16 GB
- 
-- `Ubuntu Boot USB` —   A bootable USB drive for installing Ubuntu/Linux. Recommended size: 8–16 GB
- 
-- `External Hard Drive` —  Used for Ubuntu/Linux installation and additional storage. Current setup uses a 1 TB Western Digital Hard Disk Drive , 2.5-inch
- 
-- `Sata to USB Cable` — Sata to USB cable/enclouse to be able to use the external HHD
- 
-- `Extras` — Mouse,Keyboard,HDMI,Extra Computer
+This project demonstrates how to transform an older Mac Mini into a flexible HomeLab environment capable of running multiple operating systems for learning, testing, and experimentation. 
 
-## Programs
+You will learn how to:
 
-- `Balena Etcher` — We use this to create a OS Boor USB/ Burn ISO into a USB. (https://etcher.balena.io/)
+- Prepare macOS for multi‑booting
+- Create Windows 10 and Ubuntu bootable USB installers
+- Install Windows 10 using Boot Camp Assistant
+- Install Ubuntu on an external hard drive
+- Configure partitions safely without breaking macOS
+- Boot each OS reliably using the Mac startup manager
 
+## 🖥️ Hardware Used
 
-## Websites
+- **Mac Mini Late 2014** (base system)
+- **Windows 10 Boot USB** (8–16 GB)
+- **Ubuntu Boot USB** (8–16 GB)
+- **External Hard Drive** (1 TB Western Digital HDD)
+- **SATA‑to‑USB 2.5" Adapter**
+- **Keyboard, Mouse, HDMI Display**
 
-- `Window 10 ISO` — (https://www.microsoft.com/en-us/software-download/windows10?msockid=048a50d796596c76364c463797ea6d5f)
- 
-- `Ubuntu ISO` — (https://ubuntu.com/download/desktop)
+## 🧰 Software & Tools
+- **balenaEtcher** — Create bootable USB installers https://etcher.balena.io
+- **Windows 10 ISO** https://www.microsoft.com/en-us/software-download/windows10
+- **Ubuntu Desktop ISO** https://ubuntu.com/download/desktop
 
 ## Table of Contents
 
@@ -35,73 +37,43 @@ Table of Contents
 
 1. macOS Update and Preparation
 
-2. Windows 10 Boot USB Preparation
+2. Windows 10 Boot USB Creation
 
-3. macOS Windows 10 Partition Installation
+3. Windows 10 Installation (Boot Camp)
 
-4. Prepare External Hard Drive
+4. External Drive Preparation
 
-5. Ubuntu Boot USB Preparation
+5. Ubuntu Boot USB Creation
 
-6. Ubuntu Installation
+6. Ubuntu Installation (External Drive)
 
+7. Booting Between macOS, Windows, and Ubuntu
 
-## Setup
+---
 
-## 🖥️ macOS Update and Preparation
+## 🍎 1. macOS Update & Preparation
 
--Begin by checking which version of macOS the Mac Mini is currently running.
-
--Verify whether this version is the latest operating system supported by the device.
-
--Once the appropriate macOS version has been downloaded and installed, you can proceed with partitioning the system.
+- Check the macOS version and update to the latest supported version for the 2014 Mac Mini.
+- Avoid installing unsupported macOS versions.
+- After updating, prepare the system for partitioning.
 
 `Warning` I do not recommend attempting to install a macOS version that is not officially supported on the Mac Mini.
 
-## 🪟 Windows 10 Boot USB Preparation (Using balenaEtcher)
+## 🪟 2. Create Windows 10 Boot USB (balenaEtcher)
 
 This section explains how to create a bootable Windows 10 USB installer using balenaEtcher, a simple and cross‑platform flashing tool. The resulting USB can be used to install or repair Windows 10 on compatible hardware.
 
 `Requirements` 
 
-Before you begin, make sure you have:
+- USB drive (8 GB+)
+- Windows 10 ISO
+- balenaEtcher installed
 
--A USB flash drive (8 GB or larger)
-
--A working Windows, macOS, or Linux system
-
--A stable internet connection
-
--balenaEtcher installed: (https://etcher.balena.io)
-
--Windows 10 ISO : (https://www.microsoft.com/en-us/software-download/windows10?msockid=048a50d796596c76364c463797ea6d5f)
-
-Step 1 — Download the Windows 10 ISO
-
-From Microsoft (Recommended)
-
-1.  Visit the official Microsoft download page:
-(https://www.microsoft.com/en-us/software-download/windows10?msockid=048a50d796596c76364c463797ea6d5f)
-
-2. Scroll to Create Windows 10 installation media “Download Now - Windows 10 Disk Image (ISO File)”.
-
-3. Wait until it finish downloading.
-
-Step 2 — Create the Bootable USB with Etcher
-
-balenaEtcher works the same across Windows, macOS, and Linux.
-
-1.  Visit the official balenaEtcher download page:  (https://etcher.balena.io)
-
-2. Install and open balenaEtcher. 
-
-3. Click Flash from file and select the Windows 10 ISO.
-
-4. Click Select target and choose your USB drive.
-
-5. Click Flash!
-
-6. Wait for Etcher to finish writing and validating the USB.
+**Steps** 
+1. Download the Windows 10 ISO from Microsoft.
+2. Open balenaEtcher → *Flash from file* → select ISO.
+3. Choose the USB drive → *Flash*.
+4. Wait for validation to complete.
 
 `Notes` 
 
@@ -113,25 +85,18 @@ balenaEtcher works the same across Windows, macOS, and Linux.
 
 -Etcher is ideal for simple, cross‑platform flashing, but advanced partitioning options (GPT/MBR selection) are not available.
 
-## 🖥️ macOS Monterey — Windows 10 Installation Using Boot Camp Assistant (With Windows 10 Boot USB)
+## 🪟 3. Install Windows 10 Using Boot Camp Assistant
 
 This guide explains how to install Windows 10 on a macOS Monterey system using Boot Camp Assistant together with a Windows 10 bootable USB. This method is designed for older Macs—such as the Mac mini (Late 2014)—where Boot Camp Assistant may not automatically create a USB installer but still supports partitioning and installation.
 
 `Requirements`
 
--macOS Monterey
+- macOS Monterey
+- Windows 10 ISO
+- Bootable USB installer
+- 40 GB+ free disk space
 
--A Mac that supports Windows 10 installation (tested on Mac mini 2014)
-
--Windows 10 ISO file
-
--Bootable Windows 10 USB (created with balenaEtcher)
-
--At least 40 GB of free disk space
-
--USB keyboard/mouse recommended
-
--Internet connection for driver installation
+**Steps**
 
 Step 1 — Open Boot Camp Assistant
 
