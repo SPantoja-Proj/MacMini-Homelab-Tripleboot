@@ -370,7 +370,7 @@ Ubuntu should now start normally.
   - **EFI Boot** → Windows
   - **EFI Boot (External)** → Ubuntu
  
-    ---
+ ---
     
 ## 🎉 Final Result
 
