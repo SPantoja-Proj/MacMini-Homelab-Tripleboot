@@ -391,3 +391,27 @@ balenaEtcher works the same across Windows, macOS, and Linux.
 -Etcher is ideal for simple, cross‑platform flashing, but advanced partitioning options (GPT/MBR selection) are not available.
 
 ## Installation of Ubuntu
+
+Step 1 — Boot the Mac Mini From the USB Installer
+
+1.Plug in:
+
+  -The Ubuntu USB installer
+
+  -The external hard drive (target install disk)
+
+2.Restart the Mac mini.
+
+3.Hold Option (⌥) or Alt immediately after the chime.
+
+4.Select EFI Boot (this is the Ubuntu installer).
+
+Step 2 — Start Ubuntu Installer
+
+1.When Ubuntu loads, choose:
+
+  -Try or Install Ubuntu → Install Ubuntu
+
+Step 3 —
+
+
