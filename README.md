@@ -462,4 +462,35 @@ Step 4 — Install GRUB to the External Drive
 
 This ensures Ubuntu only boots when the external drive is connected.
   
+Step 5 — Finish Installation
+
+1. Let the installer complete.
+
+2. Shut down the Mac mini.
+
+3. Remove the USB installer.
+
+4. Keep the external Ubuntu drive connected.
+
+Step 6 — Boot Ubuntu From the External Drive
+
+1. Power on the Mac mini.
+
+2. Hold Option (⌥) or Alt during startup.
+
+3. Select EFI Boot (your external Ubuntu drive).
+
+Ubuntu should now start normally.
+
+🎉 You Now Have a Fully Installed External Ubuntu System
+
+Perfect for:
+
+-Homelab projects
+
+-Linux administration practice
+
+-Keeping macOS untouched
+
+-A portable Linux environment
 
