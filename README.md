@@ -412,6 +412,19 @@ Step 2 — Start Ubuntu Installer
 
   -Try or Install Ubuntu → Install Ubuntu
 
-Step 3 —
+`IMPORTANT: Manual Partitioning (So You Don’t Break macOS)`
+
+This is the critical part.
+
+When you reach Installation Type, choose:
+
+✔️ “Something else”
+
+This prevents Ubuntu from overwriting your internal macOS disk.
+
+Step 3 — Partition the External Hard Drive for Ubuntu
+
+
+
 
 
