@@ -205,6 +205,80 @@ Continue setup until you reach the Windows desktop.
 
 ## Prepare External Hard Drive
 
+You will be doing three main things:
+
+1.Back up the drive (everything will be erased).
+
+2.Partition the drive into:
+
+ -A bootable Linux OS partition
+
+ -A shared storage partition
+
+ Step 1 — Back Up the Drive
+ 
+Before anything else, copy any important files off the external drive. Partitioning will wipe it.
+
+Step 2 — Partition the External Drive
+
+`On macOS (Disk Utility)`
+
+This is the cleanest method for your Mac mini setup.
+
+Steps:
+
+1.Open Disk Utility
+
+2.In the top-left, choose View → Show All Devices
+
+3.Select the physical external drive (not the volume under it)
+
+4.Click Erase
+
+-Format: GUID Partition Map (GPT)
+
+-File system: ExFAT (temporary; we’ll repartition next)
+
+5.After erase completes, click Partition
+
+6.Create two partitions:
+
+-Linux OS partition
+
+   -Name: LinuxOS
+
+   -Format: MS-DOS (FAT) (Linux installer will reformat it to ext4)
+
+   -Size:  GB depending on your needs
+
+-Storage partition
+
+  -Name: Storage
+
+  -Format: ExFAT (works on macOS, Windows, Linux)
+
+  -Size: the rest of the drive
+
+`Why FAT for the Linux partition?`
+
+Linux installers can’t install directly onto APFS or ExFAT. FAT is just a placeholder; the installer will convert it to ext4 or btrfs.
+
+`On Windows (Disk Management)`
+
+Steps:
+
+1.Open diskmgmt.msc
+
+2.Right‑click the external drive → Delete Volume until it’s unallocated
+
+3.Right‑click → New Simple Volume
+
+4.Create:
+
+  -Partition 1: LinuxOS → Format FAT32
+
+  -Partition 2: Storage → Format NTFS or exFAT
+
 ## Ubuntu Boot USB Preparation
 
 ## Installation of Ubuntu
