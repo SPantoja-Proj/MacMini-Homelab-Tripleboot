@@ -17,6 +17,8 @@ You will learn how to:
 - Configure partitions safely without breaking macOS
 - Boot each OS reliably using the Mac startup manager
 
+---
+
 ## 🖥️ Hardware Used
 
 - **Mac Mini Late 2014** (base system)
@@ -26,10 +28,14 @@ You will learn how to:
 - **SATA‑to‑USB 2.5" Adapter**
 - **Keyboard, Mouse, HDMI Display**
 
+--- 
+
 ## 🧰 Software & Tools
 - **balenaEtcher** — Create bootable USB installers https://etcher.balena.io
 - **Windows 10 ISO** https://www.microsoft.com/en-us/software-download/windows10
 - **Ubuntu Desktop ISO** https://ubuntu.com/download/desktop
+
+---
 
 ## Table of Contents
 
@@ -59,6 +65,8 @@ Table of Contents
 
 `Warning` I do not recommend attempting to install a macOS version that is not officially supported on the Mac Mini.
 
+--- 
+
 ## 🪟 2. Create Windows 10 Boot USB (balenaEtcher)
 
 This section explains how to create a bootable Windows 10 USB installer using balenaEtcher, a simple and cross‑platform flashing tool. The resulting USB can be used to install or repair Windows 10 on compatible hardware.
@@ -85,6 +93,8 @@ This section explains how to create a bootable Windows 10 USB installer using ba
 
 -Etcher is ideal for simple, cross‑platform flashing, but advanced partitioning options (GPT/MBR selection) are not available.
 
+---
+
 ## 🪟 3. Install Windows 10 Using Boot Camp Assistant
 
 This guide explains how to install Windows 10 on a macOS Monterey system using Boot Camp Assistant together with a Windows 10 bootable USB. This method is designed for older Macs—such as the Mac mini (Late 2014)—where Boot Camp Assistant may not automatically create a USB installer but still supports partitioning and installation.
@@ -97,72 +107,11 @@ This guide explains how to install Windows 10 on a macOS Monterey system using B
 - 40 GB+ free disk space
 
 **Steps**
-
-Step 1 — Open Boot Camp Assistant
-
-1. On macOS, open:
-Applications → Utilities → Boot Camp Assistant
-
-2. Boot Camp Assistant may not show the option to create a USB installer on Monterey, but it still supports partitioning.
-
-3. Click Continue.
-
-Step 2 - Create the Windows Partition
-
-1. In Boot Camp Assistant, adjust the partition slider.
-
-2. Allocate amount GB for Windows (your choice).
-
-3. Click Install.
-
-4. Boot Camp Assistant will:
-
--Resize the macOS partition
-
--Create a BOOTCAMP partition
-
--Restart the Mac
-
-`Note` Boot Camp Assistant will reboot, but it may not automatically detect the USB installer. That’s expected on older Macs.
-
-Step 3 - Boot From the Windows 10 USB
-
-1. When the Mac restarts, immediately hold Option (⌥) Alt for regular keyboard.
-
-2. Select EFI Boot (your Windows USB).
-
-3. The Windows installer will load.
-
-Step 4 - Install Windows 10
-
-1. Choose your language and click Install Now.
-
-2. Enter your product key or skip for later activation.
-
-3.Select Windows 10 Home or Pro.(doesn't show sometimes)
-
-4. When asked where to install Windows:
-
--Select the BOOTCAMP partition
-
--Click Format
-
--Click Next
-
-`Do not delete or modify macOS partitions.` Only format the BOOTCAMP partition.
-
-Step 5 - Complete Installation
-
-Windows will reboot several times.
-If it boots into macOS:
-
-1. Restart
-
-2. Hold Option (⌥) or Alt
-
-3. Select Windows
-
-Continue setup until you reach the Windows desktop.
+1. Open **Boot Camp Assistant**.
+2. Create the Windows partition.
+3. Reboot and hold **Option (⌥)**.
+4. Select **EFI Boot** (USB).
+5. Format the BOOTCAMP partition → install Windows.
 
 `Notes`
 
@@ -172,9 +121,11 @@ Continue setup until you reach the Windows desktop.
 
 -Always back up macOS before modifying partitions.
 
-## 💾 Prepare External Hard Drive
+---
 
-You will be doing three main things:
+## 💾 4. Prepare External Hard Drive for Ubuntu
+
+You will create two partitions:
 
 1. Back up the drive (everything will be erased).
 
@@ -300,50 +251,14 @@ Steps (Disk Utility)
 
 7. Click Erase.
 
-## 💽 Ubuntu Boot USB Preparation (Using balenaEtcher)
+---
 
-This section explains how to create a bootable Ubuntu USB installer using balenaEtcher, a simple and cross‑platform flashing tool. The resulting USB can be used to install or repair Ubuntu on compatible hardware.
+## 🐧 5. Create Ubuntu Boot USB (balenaEtcher)
 
-`Requirements` 
+Same process as Windows: 
 
-Before you begin, make sure you have:
-
--A USB flash drive (8 GB or larger)
-
--A working Windows, macOS, or Linux system
-
--A stable internet connection
-
--balenaEtcher installed: (https://etcher.balena.io)
-
--Ubuntu ISO : (https://ubuntu.com/download/desktop)
-
-Step 1 — Download the Ubuntu ISO
-
-From Ubuntu (Recommended)
-
-1.  Visit the official Ubuntu download page:
-(https://ubuntu.com/download/desktop)
-
-2. Scroll to Ubuntu latest OS page “Download the Ubuntu version you want to install (ISO File)”.
-
-3. Wait until it finish downloading.
-
-Step 2 — Create the Bootable USB with Etcher
-
-balenaEtcher works the same across Windows, macOS, and Linux.
-
-1.  Visit the official balenaEtcher download page:  (https://etcher.balena.io)
-
-2. Install and open balenaEtcher. 
-
-3. Click Flash from file and select the Ubuntu ISO.
-
-4. Click Select target and choose your USB drive.
-
-5. Click Flash!
-
-6. Wait for Etcher to finish writing and validating the USB.
+1. Download Ubuntu ISO.
+2. Flash using balenaEtcher.
 
 `Notes` 
 
@@ -355,27 +270,25 @@ balenaEtcher works the same across Windows, macOS, and Linux.
 
 -Etcher is ideal for simple, cross‑platform flashing, but advanced partitioning options (GPT/MBR selection) are not available.
 
-## 🖥️ Installation of Ubuntu
+---
 
+## 🐧 6. Install Ubuntu on External Drive
+
+**Steps**
 Step 1 — Boot the Mac Mini From the USB Installer
 
 1. Plug in:
-
   -The Ubuntu USB installer
-
-  -The external hard drive (target install disk)
-
-2. Restart the Mac mini.
-
-3. Hold Option (⌥) or Alt immediately after the chime.
-
-4. Select EFI Boot (this is the Ubuntu installer).
-
-Step 2 — Start Ubuntu Installer
-
-1. When Ubuntu loads, choose:
-
-  -Try or Install Ubuntu → Install Ubuntu
+  -The external hard drive (target install disk
+2.  Boot Mac → hold **Option (⌥)** → choose **EFI Boot**.
+3.   Select **Install Ubuntu**.
+4.   Select the external drive (usually `/dev/sdb`).
+5.   Create:
+   - EFI (512 MB, FAT32, `/boot/efi`)
+   - Root (ext4, `/`)
+   - Swap (4–8 GB)
+   - Home (optional)
+6.Install GRUB to the external drive (NOT `/dev/sda`).
 
 `IMPORTANT: Manual Partitioning (So You Don’t Break macOS)`
 
@@ -447,17 +360,24 @@ Step 6 — Boot Ubuntu From the External Drive
 
 Ubuntu should now start normally.
 
-## 🎉 Your Finished
+---
 
-`🎉 You Now Have a Fully Installed External Ubuntu System`
+## 🔄 7. Booting Between OSes
 
-Perfect for:
+- Hold **Option (⌥) or Alt ** during startup.
+- Choose:
+  - **Macintosh HD** → macOS
+  - **EFI Boot** → Windows
+  - **EFI Boot (External)** → Ubuntu
+ 
+    ---
+    
+## 🎉 Final Result
 
--Homelab projects
+You now have a fully functional **triple‑boot HomeLab** running on a Mac Mini Late 2014 — perfect for:
 
--Linux administration practice
-
--Keeping macOS untouched
-
--A portable Linux environment
-
+- Linux administration practice
+- Windows testing
+- macOS development
+- Networking & virtualization experiments
+- Portable Linux environment
