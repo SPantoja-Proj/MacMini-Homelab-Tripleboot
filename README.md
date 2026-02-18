@@ -47,7 +47,7 @@ You will learn how to:
 - [4. Prepare External Hard Drive for Ubuntu](#4prepare-external-hard-drive-for-ubuntu)
 - [5. Create Ubuntu Boot USB](#5create-ubuntu-boot-usb)
 - [6. Install Ubuntu on External Drive](#6install-ubuntu-on-external-drive)
-- [7. Booting Between macOS Windows and Ubuntu](#7booting-between-macos-windows-and-ubuntu)
+- [7. Booting Between OSes](#7booting-between-oses)
 - [Final Result](#final-result)
 
 ---
