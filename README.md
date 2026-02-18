@@ -38,9 +38,9 @@ You will learn how to:
 ---
 
 ## Table of Contents
-- [0.Project Overview](#0-project-overview)
-- [1.Hardware Used](#1-hardware-used)
-- [2.Software & Tools](#2-software--tools)
+- [Project Overview](#-project-overview)
+- [Hardware Used](#-hardware-used)
+- [Software & Tools](#-software--tools)
 - [3.macOS Update & Preparation](#3-macos-update--preparation)
 - [4.Create Windows 10 Boot USB](#4-create-windows-10-boot-usb)
 - [5.Install Windows 10 Using Boot Camp Assistant](#5-install-windows-10-using-boot-camp-assistant)
