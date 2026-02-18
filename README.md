@@ -51,9 +51,10 @@ You will learn how to:
 - [10. Final Result](#10-final-result)
 - [11. About](#11-about)
 
+
 ---
 
-## 🍎1. macOS Update & Preparation
+##🍎1.macOS Update & Preparation
 
 - Check the macOS version and update to the latest supported version for the 2014 Mac Mini.
 - Avoid installing unsupported macOS versions.
@@ -63,7 +64,7 @@ You will learn how to:
 
 --- 
 
-## 🪟 2. Create Windows 10 Boot USB (balenaEtcher)
+##🪟2.Create Windows 10 Boot USB (balenaEtcher)
 
 This section explains how to create a bootable Windows 10 USB installer using balenaEtcher, a simple and cross‑platform flashing tool. The resulting USB can be used to install or repair Windows 10 on compatible hardware.
 
@@ -91,7 +92,7 @@ This section explains how to create a bootable Windows 10 USB installer using ba
 
 ---
 
-## 🪟 3. Install Windows 10 Using Boot Camp Assistant
+##🪟3.Install Windows 10 Using Boot Camp Assistant
 
 This guide explains how to install Windows 10 on a macOS Monterey system using Boot Camp Assistant together with a Windows 10 bootable USB. This method is designed for older Macs—such as the Mac mini (Late 2014)—where Boot Camp Assistant may not automatically create a USB installer but still supports partitioning and installation.
 
@@ -119,7 +120,7 @@ This guide explains how to install Windows 10 on a macOS Monterey system using B
 
 ---
 
-## 💾 4. Prepare External Hard Drive for Ubuntu
+##💾4.Prepare External Hard Drive for Ubuntu
 
 You will create two partitions:
 
@@ -249,7 +250,7 @@ Steps (Disk Utility)
 
 ---
 
-## 🐧 5. Create Ubuntu Boot USB (balenaEtcher)
+##🐧5.Create Ubuntu Boot USB (balenaEtcher)
 
 Same process as Windows: 
 
@@ -268,7 +269,7 @@ Same process as Windows:
 
 ---
 
-## 🐧 6. Install Ubuntu on External Drive
+##🐧6.Install Ubuntu on External Drive
 
 **Steps**
 Step 1 — Boot the Mac Mini From the USB Installer
@@ -358,7 +359,7 @@ Ubuntu should now start normally.
 
 ---
 
-## 🔄 7. Booting Between OSes
+##🔄7.Booting Between OSes
 
 - Hold **Option (⌥) or Alt ** during startup.
 - Choose:
@@ -368,7 +369,7 @@ Ubuntu should now start normally.
  
  ---
     
-## 🎉 Final Result
+##🎉Final Result
 
 You now have a fully functional **triple‑boot HomeLab** running on a Mac Mini Late 2014 — perfect for:
 
