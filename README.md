@@ -4,7 +4,7 @@
 
 A fully documented HomeLab project built on a **Mac Mini Late 2014**, upgraded with external storage and configured to run **macOS**, **Windows 10**, and **Ubuntu Linux**. This repository tracks the evolution of the setup, installation steps, configurations, and experiments along the way.
 
-## 🚀 Project Overview 
+##🚀Project Overview 
 
 This project demonstrates how to transform an older Mac Mini into a flexible HomeLab environment capable of running multiple operating systems for learning, testing, and experimentation. 
 
@@ -19,7 +19,7 @@ You will learn how to:
 
 ---
 
-## 🖥️ Hardware Used
+##🖥️Hardware Used
 
 - **Mac Mini Late 2014** (base system)
 - **Windows 10 Boot USB** (8–16 GB)
@@ -30,7 +30,7 @@ You will learn how to:
 
 --- 
 
-## 🧰 Software & Tools
+##🧰Software & Tools
 - **balenaEtcher** — Create bootable USB installers https://etcher.balena.io
 - **Windows 10 ISO** https://www.microsoft.com/en-us/software-download/windows10
 - **Ubuntu Desktop ISO** https://ubuntu.com/download/desktop
