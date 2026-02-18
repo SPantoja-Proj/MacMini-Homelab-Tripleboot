@@ -2,6 +2,10 @@
 
 # Mac Mini Late 2014 — Triple‑Boot HomeLab Setup 
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![macOS](https://img.shields.io/badge/macOS-10.15%2B-blue)](https://www.apple.com/macos)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--02--18-brightgreen)]
+
 A fully documented HomeLab project built on a **Mac Mini Late 2014**, upgraded with external storage and configured to run **macOS**, **Windows 10**, and **Ubuntu Linux**. This repository tracks the evolution of the setup, installation steps, configurations, and experiments along the way.
 
 ## 🚀Project Overview 
